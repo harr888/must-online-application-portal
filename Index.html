@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            MUST-Online Application Portal
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <img src="must-logo.png" alt="Mbarara University of Science and Technology (MUST) logo" style="display:block; width:120px; height:auto; margin:0 auto 20px;">
+        <!--Sign In Form Container -->
+        <div class="container">
+            <h2> Welcome Back </h2>
+            <p> Log in to access your application dashboard </p>
+            <form method="post">
+                <label>Email Address </label>
+                <input type="email" placeholder="harryharris531@gmail.com" required>
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password" required>
+                <button type ="submit" class="btn btn-blue">Sign In </button> 
+            </form>
+            <a href="#">Forgot your password ? </a>
+            <hr>
+            <div class="row">
+                <button type="button" class="btn btn-outline" onclick="document.getElementById('modal').style.display='flex'">Create A</button>
+                <button type="button" class="btn btn-outline">How to Apply</button>
+            </div>
+        </div>
+        <!--Create Account Modal Form -->
+        <div id="modal" class="modal">
+            <div class="container modal-box">
+                <h2>Create Account</h2>
+                <p>Provide your deatils to reaceive a temporary password.</p>
+                <form method="post">
+                    <label>Surname</label>
+                    <input type="text" placeholder="surname" required>
+                    <label>Other names </label>
+                    <input type="text" placeholder="Other names" required>
+                    <label>Phone Number</label>
+                    <div class="row">
+                        <select>
+                            <option>Uganda (+256)</option>                    
+                        </select>
+                        <input type="text" placeholder="0770000000" required>
+                    </div>
+                    <label>Email Address</label>
+                    <input type="email" placeholder="harryharris531@gmail.com" required>
+                    <div class="row" style="margin-top: 15px;">
+                        <button type="button" class="btn btn-outline" onclick="document.getElementById('modal').style.display='none'">Close</button>
+                        <button type="submit" class="btn btn-blue">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
